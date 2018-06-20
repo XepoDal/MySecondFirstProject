@@ -2,59 +2,43 @@ package com.google;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
-public class game4 extends setUp
-{
+public class Game4 extends GameObject{
     By win_close = By.xpath("//*[@id=\"game\"]/div/div[1]/img[1]");
     By num1 = By.id("mo_number_1");
     By num2 = By.id("mo_number_2");
     By result = By.id("mo_result");
-    public int result1;
-    boolean test;
+    public int actualResult;
+    WebDriver driver;
 
-
-    public game4(WebDriver driver)
+    public Game4(WebDriver driver)
     {
         this.driver = driver;
     }
 
-    public void WinClose()
+    public void winClose()
     {
         driver.findElement(win_close).click();
     }
 
-    public void checkResult() throws InterruptedException {
+    public void checkResult() {
         (new WebDriverWait(driver,180)).until(ExpectedConditions.visibilityOfElementLocated(By.id("mo_smile_img_id")));
         String str1 = driver.findElement(num1).getText();
         String str2 = driver.findElement(num2).getText();
         String str3 = driver.findElement(result).getText();
         String str4 = driver.findElement(By.id("mo_operation")).getText();
         if (str4.equals("+")) {
-            result1 = Integer.parseInt(str1.trim()) + Integer.parseInt(str2.trim());
+            actualResult = Integer.parseInt(str1.trim()) + Integer.parseInt(str2.trim());
         }
         else{ if (str4.equals("-")){
-            result1 = Integer.parseInt(str1.trim()) - Integer.parseInt(str2.trim());
+            actualResult = Integer.parseInt(str1.trim()) - Integer.parseInt(str2.trim());
         }
         }
-        if ((str3.equals(String.valueOf(result1)))) {
-            test = true;
-            System.out.println("Success");
-        }
-        else {
-            test = false;
-            System.out.println("Error");
-            throw new AssertionError();
-        }
-        System.out.println("Game 4");
-        System.out.println(str1 +" "+ str4 + str2 + " = " + str3);
-        System.out.println("correctly?:" + test);
-        //public void
-        //System.out.print(test);
-
+        assert (str3.equals(String.valueOf(actualResult))) : "Wrong expected result";
     }
-
+    public void timeOutTest(int summ){};
+    public void incorrectAnswersTest(int summ){};
+    public void correctAnswersTest(int breakpoint){};
 }

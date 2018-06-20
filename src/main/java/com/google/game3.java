@@ -2,33 +2,28 @@ package com.google;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
-public class game3 extends setUp
-{
+public class Game3 extends GameObject{
     By win_close = By.xpath("//*[@id=\"game\"]/div/div[1]/img[1]");
     By num1 = By.id("mo_number_1");
     By num2 = By.id("mo_number_2");
     By result = By.id("mo_result");
-    public int result1;
-    boolean test;
-    //WebDriverWait waitDriver = new WebDriverWait(driver, 10);
+    public int actualResult;
+    WebDriver driver;
 
-
-    public game3(WebDriver driver)
+    public Game3(WebDriver driver)
     {
         this.driver = driver;
     }
 
-    public void WinClose()
+    public void winClose()
     {
         driver.findElement(win_close).click();
     }
 
-    public void checkResult() throws InterruptedException {
+    public void checkResult() {
 
         (new WebDriverWait(driver,180)).until(ExpectedConditions.visibilityOfElementLocated(By.id("mo_smile_img_id")));
         String str1 = driver.findElement(num1).getText();
@@ -36,23 +31,14 @@ public class game3 extends setUp
         String str3 = driver.findElement(result).getText();
         String str4 = driver.findElement(By.id("mo_operation")).getText();
         if (str4.equals("x")) {
-            result1 = Integer.parseInt(str1.trim()) * Integer.parseInt(str2.trim());
-        }
-        if ((str3.equals(String.valueOf(result1)))) {
-            test = true;
-            System.out.println("Success");
+            actualResult = Integer.parseInt(str1.trim()) * Integer.parseInt(str2.trim());
         }
         else {
-            test = false;
-            System.out.println("Error");
-            throw new AssertionError();
+            assert true : "Wrong operator";
         }
-        System.out.println("Game 3");
-        System.out.println(str1 +" "+ str4 + str2 + " = " + str3);
-        System.out.println("correctly?:" + test);
-        //public void
-        //System.out.print(test);
-
+        assert (str3.equals(String.valueOf(actualResult))) : "Wrong expected result";
     }
-
+    public void timeOutTest(int summ){};
+    public void incorrectAnswersTest(int summ){};
+    public void correctAnswersTest(int breakpoint){};
 }
