@@ -38,7 +38,10 @@ public class Game4 extends GameObject{
         }
         assert (str3.equals(String.valueOf(actualResult))) : "Wrong expected result";
     }
-    public void timeOutTest(int summ){};
-    public void incorrectAnswersTest(int summ){};
-    public void correctAnswersTest(int breakpoint){};
+    public void timeOutTest(int summ){}
+    public void timeOutTest(){}
+    public void incorrectAnswersTest(int summ){}
+    public void incorrectAnswersTest(){}
+    public void correctAnswersTest(int breakpoint){}
+    public void correctAnswersTest(){}
 }

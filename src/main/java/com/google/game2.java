@@ -41,8 +41,11 @@ public class Game2 extends GameObject{
 
 
     }
-    public void timeOutTest(int summ){};
-    public void incorrectAnswersTest(int summ){};
-    public void correctAnswersTest(int breakpoint){};
+    public void timeOutTest(int summ){}
+    public void timeOutTest(){}
+    public void incorrectAnswersTest(int summ){}
+    public void incorrectAnswersTest(){}
+    public void correctAnswersTest(int breakpoint){}
+    public void correctAnswersTest(){}
 
 }

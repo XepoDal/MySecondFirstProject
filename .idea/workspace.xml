@@ -13,7 +13,13 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/google/GameObject.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/google/PageObject.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/google/HeirClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/google/TestGamePlay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayCommon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayCorrectAnswers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayHideShowOptionsHero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayHideShowOptionsKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayHideShowOptionsTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayIncorrectAnswers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayTimeOut.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/google/TestOpenAllGames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -52,68 +58,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game1.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestOpenInfoPages.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestOpenInfoPages.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/google/Game1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+            <state relative-caret-position="561">
+              <caret line="33" column="81" selection-start-line="33" selection-start-column="81" selection-end-line="33" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1308#1309#0" expanded="true" />
+                <element signature="e#1361#1362#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestGamePlay.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlay.java">
+      <file leaf-file-name="TestOpenAllGames.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestOpenAllGames.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="119">
+              <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game4.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/google/Game4.java">
+      <file leaf-file-name="TestGamePlayHideShowOptionsHero.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlayHideShowOptionsHero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game5.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/google/Game5.java">
+      <file leaf-file-name="TestGamePlayHideShowOptionsTime.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlayHideShowOptionsTime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="51" column="53" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/google/GameObject.java">
+      <file leaf-file-name="TestGamePlayHideShowOptionsKeys.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlayHideShowOptionsKeys.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="153">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelpPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/google/HelpPage.java">
+      <file leaf-file-name="TestGamePlayTimeOut.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlayTimeOut.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="7" column="47" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="7" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestGamePlayCommon.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlayCommon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -121,33 +138,8 @@
       <file leaf-file-name="MainPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/google/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#788#789#0" expanded="true" />
-                <element signature="e#818#819#0" expanded="true" />
-                <element signature="e#868#869#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PageObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/google/PageObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SignInPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/google/SignInPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="276">
+              <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,14 +147,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AboutPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/google/AboutPage.java">
+      <file leaf-file-name="TestGamePlayIncorrectAnswers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlayIncorrectAnswers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -183,14 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/google/aboutPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/google/signInPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/google/helpPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/google/mainPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/google/game2.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/google/game3.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/google/game4.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/google/game5.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/google/setUp.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/google/test.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/google/main.java" />
@@ -227,13 +208,21 @@
         <option value="$PROJECT_DIR$/src/test/java/com/google/TestOpenAllGames.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/google/TestGameplay.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/google/MainPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/google/GameObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/google/Game2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/google/Game3.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/google/Game2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/google/Game4.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/google/Game5.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/google/GameObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/google/TestGamePlay.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayIncorrectAnswers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayCorrectAnswers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayTimeOut.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayHideShowOptions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayHideShowOptionsHero.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayHideShowOptionsTime.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayHideShowOptionsKeys.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/google/Game1.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/google/TestGamePlayCommon.java" />
       </list>
     </option>
   </component>
@@ -334,6 +323,9 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.google" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.google" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -347,43 +339,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest">
-    <configuration name="testClass" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MySecondFirstProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.google.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.google" />
-      <option name="MAIN_CLASS_NAME" value="com.google.testClass" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestGamePlayIncorrectAnswers.testGamePlayIncorrectAnswers">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="mainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.google.mainClass" />
-      <module name="MySecondFirstProject" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.google.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
     </configuration>
     <configuration name="MyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MySecondFirstProject" />
@@ -408,7 +366,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="MyTest.testAssert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGamePlayCommon.testGamePlayCommon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MySecondFirstProject" />
       <extension name="coverage">
         <pattern>
@@ -419,8 +377,77 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.google" />
-      <option name="MAIN_CLASS_NAME" value="com.google.MyTest" />
-      <option name="METHOD_NAME" value="testAssert" />
+      <option name="MAIN_CLASS_NAME" value="com.google.TestGamePlayCommon" />
+      <option name="METHOD_NAME" value="testGamePlayCommon" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestGamePlayHideShowOptionsTime.testGamePlayHideShowOptionsTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySecondFirstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.google" />
+      <option name="MAIN_CLASS_NAME" value="com.google.TestGamePlayHideShowOptionsTime" />
+      <option name="METHOD_NAME" value="testGamePlayHideShowOptionsTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestGamePlayIncorrectAnswers.testGamePlayIncorrectAnswers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySecondFirstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.google" />
+      <option name="MAIN_CLASS_NAME" value="com.google.TestGamePlayIncorrectAnswers" />
+      <option name="METHOD_NAME" value="testGamePlayIncorrectAnswers" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestGamePlay.testGamePlay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MySecondFirstProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.google.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.google" />
+      <option name="MAIN_CLASS_NAME" value="com.google.TestGamePlay" />
+      <option name="METHOD_NAME" value="testGamePlay" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -438,29 +465,6 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="testClass.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MySecondFirstProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.google.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.google" />
-      <option name="MAIN_CLASS_NAME" value="com.google.testClass" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -493,19 +497,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.mainClass" />
-      <item itemvalue="Android JUnit.testClass" />
-      <item itemvalue="JUnit.testClass.test" />
-      <item itemvalue="JUnit.MyTest.testAssert" />
       <item itemvalue="JUnit.MyTest" />
+      <item itemvalue="JUnit.TestGamePlay.testGamePlay" />
+      <item itemvalue="JUnit.TestGamePlayCommon.testGamePlayCommon" />
+      <item itemvalue="JUnit.TestGamePlayHideShowOptionsTime.testGamePlayHideShowOptionsTime" />
+      <item itemvalue="JUnit.TestGamePlayIncorrectAnswers.testGamePlayIncorrectAnswers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestGamePlayIncorrectAnswers.testGamePlayIncorrectAnswers" />
+        <item itemvalue="JUnit.TestGamePlayHideShowOptionsTime.testGamePlayHideShowOptionsTime" />
+        <item itemvalue="JUnit.TestGamePlayCommon.testGamePlayCommon" />
+        <item itemvalue="JUnit.TestGamePlay.testGamePlay" />
         <item itemvalue="JUnit.MyTest" />
-        <item itemvalue="JUnit.MyTest.testAssert" />
-        <item itemvalue="JUnit.testClass.test" />
-        <item itemvalue="Android JUnit.testClass" />
-        <item itemvalue="Application.mainClass" />
       </list>
     </recent_temporary>
   </component>
@@ -523,35 +527,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testClass_test - 2018.06.18 at 17h 02m 02s.xml">
-      <configuration name="testClass.test" configurationId="JUnit" />
+    <history-entry file="TestGamePlay_testGamePlay - 2018.06.21 at 11h 59m 22s.xml">
+      <configuration name="TestGamePlay.testGamePlay" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testClass_test - 2018.06.18 at 17h 03m 06s.xml">
-      <configuration name="testClass.test" configurationId="JUnit" />
+    <history-entry file="TestGamePlay_testGamePlay - 2018.06.21 at 12h 00m 04s.xml">
+      <configuration name="TestGamePlay.testGamePlay" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTest_testAssert - 2018.06.19 at 13h 06m 57s.xml">
-      <configuration name="MyTest.testAssert" configurationId="JUnit" />
+    <history-entry file="TestGamePlay_testGamePlay - 2018.06.21 at 12h 37m 44s.xml">
+      <configuration name="TestGamePlay.testGamePlay" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTest_testAssert - 2018.06.19 at 13h 13m 26s.xml">
-      <configuration name="MyTest.testAssert" configurationId="JUnit" />
+    <history-entry file="TestGamePlay_testGamePlay - 2018.06.21 at 12h 38m 28s.xml">
+      <configuration name="TestGamePlay.testGamePlay" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTest_testAssert - 2018.06.19 at 13h 22m 31s.xml">
-      <configuration name="MyTest.testAssert" configurationId="JUnit" />
+    <history-entry file="TestGamePlayCommon_testGamePlayCommon - 2018.06.21 at 14h 57m 14s.xml">
+      <configuration name="TestGamePlayCommon.testGamePlayCommon" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTest - 2018.06.19 at 13h 23m 27s.xml">
-      <configuration name="MyTest" configurationId="JUnit" />
+    <history-entry file="TestGamePlayCommon_testGamePlayCommon - 2018.06.21 at 15h 00m 21s.xml">
+      <configuration name="TestGamePlayCommon.testGamePlayCommon" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTest - 2018.06.19 at 13h 25m 13s.xml">
-      <configuration name="MyTest" configurationId="JUnit" />
+    <history-entry file="TestGamePlayCommon_testGamePlayCommon - 2018.06.21 at 15h 03m 11s.xml">
+      <configuration name="TestGamePlayCommon.testGamePlayCommon" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTest - 2018.06.19 at 13h 27m 20s.xml">
-      <configuration name="MyTest" configurationId="JUnit" />
+    <history-entry file="TestGamePlayCommon_testGamePlayCommon - 2018.06.21 at 15h 13m 07s.xml">
+      <configuration name="TestGamePlayCommon.testGamePlayCommon" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTest - 2018.06.19 at 17h 26m 13s.xml">
-      <configuration name="MyTest" configurationId="JUnit" />
+    <history-entry file="TestGamePlayHideShowOptionsTime_testGamePlayHideShowOptionsTime - 2018.06.21 at 16h 23m 36s.xml">
+      <configuration name="TestGamePlayHideShowOptionsTime.testGamePlayHideShowOptionsTime" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyTest - 2018.06.19 at 17h 56m 41s.xml">
-      <configuration name="MyTest" configurationId="JUnit" />
+    <history-entry file="TestGamePlayIncorrectAnswers_testGamePlayIncorrectAnswers - 2018.06.21 at 16h 58m 13s.xml">
+      <configuration name="TestGamePlayIncorrectAnswers.testGamePlayIncorrectAnswers" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -567,7 +571,7 @@
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5026042" side_tool="true" weight="0.1743638" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49739584" weight="0.1743638" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49739584" visible="true" weight="0.1743638" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
@@ -578,7 +582,7 @@
       <window_info id="UI Designer" order="1" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="7" visible="true" weight="0.22525918" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.22525918" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
@@ -657,46 +661,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/set_ups.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/Game1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="140" column="6" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/test1.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/test1" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/jdk/internal/reflect/NativeConstructorAccessorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -902,13 +866,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestOpenAllGames.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/google/HeirClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -919,80 +876,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestOpenInfoPages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/Game2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="45" column="53" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="45" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/Game3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/Game4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/Game5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="51" column="53" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/google/HelpPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/MainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#868#869#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1024,20 +913,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlay.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/Game2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state relative-caret-position="562">
+          <caret line="48" column="38" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/Game4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/Game5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/Game3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/GameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlayCorrectAnswers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlayTimeOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="47" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlayHideShowOptionsHero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlayHideShowOptionsKeys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestOpenInfoPages.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlayHideShowOptionsTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestOpenAllGames.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/google/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlayIncorrectAnswers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/google/Game1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
+        <state relative-caret-position="561">
+          <caret line="33" column="81" selection-start-line="33" selection-start-column="81" selection-end-line="33" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
+            <element signature="e#1361#1362#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/google/TestGamePlayCommon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>

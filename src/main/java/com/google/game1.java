@@ -25,10 +25,13 @@ public class Game1 extends GameObject {
     //String
     public int actualResult;
     WebDriver driver;
+    public int tasks;
 
     public Game1(WebDriver driver)
     {
         this.driver = driver;
+        /*(new WebDriverWait(driver, 60)).until(ExpectedConditions.visibilityOfElementLocated(num1));
+        this.tasks = Integer.parseInt(driver.findElement(tasks_all).getText());*/
     }
     public void winClose()
     {
@@ -52,11 +55,11 @@ public class Game1 extends GameObject {
         assert (str3.equals(String.valueOf(actualResult))) : "Wrong expected result";
 
     }
-    public void correctAnswersTest(int breakpointForPositiveTesting) {
+    public void correctAnswersTest(int getQtyOfIterationsForWrongAnswers) {
 
         (new WebDriverWait(driver, 80)).until(ExpectedConditions.visibilityOfElementLocated(tasks_remain));
         int qtyTasks = Integer.parseInt(driver.findElement(tasks_all).getText());
-        while(!((driver.findElement(tasks_remain).getText()).equals(String.valueOf(breakpointForPositiveTesting)))) {
+        for(int iter = 0; iter < getQtyOfIterationsForWrongAnswers; iter++)  {
             (new WebDriverWait(driver, 80)).until(ExpectedConditions.visibilityOfElementLocated(num1));
             try {
                 Thread.sleep(500);
@@ -80,7 +83,7 @@ public class Game1 extends GameObject {
                 }
             }
             String strActualResult = new Integer(actualResult).toString();
-            System.out.println(str1 + " " + str4 + " " + str2 + " = " + strActualResult);
+            //System.out.println(str1 + " " + str4 + " " + str2 + " = " + strActualResult);
             StringBuilder testStringBuilder = new StringBuilder();
             Formatter testFormatter = new Formatter(testStringBuilder);
             for (int i = 0; i < strActualResult.length(); i++) {
@@ -93,7 +96,7 @@ public class Game1 extends GameObject {
             int varTasks_failed_End = Integer.parseInt(driver.findElement(tasks_failed).getText());
             int varTasks_remain_End = Integer.parseInt(driver.findElement(tasks_remain).getText());
             assert varTasks_remain_End == varTasks_remain_Begin - 1 : "positiveTestCorrectAnswers: tasks remain";//
-            assert varTasks_failed_Begin == varTasks_failed_End : "positiveTestCorrectAnswers: tsks faild";
+            assert varTasks_failed_Begin == varTasks_failed_End : "positiveTestCorrectAnswers: tasks failed";
             assert varTasks_passed_End == varTasks_passed_Begin + 1 : "positiveTestCorrectAnswers: tasks passed";
         }
         int varTasks_passed_AfterCycle  = Integer.parseInt(driver.findElement(tasks_passed).getText());
@@ -102,6 +105,57 @@ public class Game1 extends GameObject {
         assert (varTasks_passed_AfterCycle + varTasks_failed_AfterCycle + varTasks_remain_AfterCycle) == qtyTasks : "positiveTestCorrectAnswers: tasks summ" ;//
        // System.out.println("Positive test passed");
     }
+
+    public void correctAnswersTest(){
+        (new WebDriverWait(driver, 80)).until(ExpectedConditions.visibilityOfElementLocated(tasks_remain));
+        int qtyTasks = Integer.parseInt(driver.findElement(tasks_all).getText());
+        int varTasksRemain = Integer.parseInt(driver.findElement(tasks_remain).getText());
+        for(int iter = 0; iter < varTasksRemain - 1; varTasksRemain = Integer.parseInt(driver.findElement(tasks_remain).getText())) {
+            (new WebDriverWait(driver, 80)).until(ExpectedConditions.visibilityOfElementLocated(num1));
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            int varTasks_passed_Begin = Integer.parseInt(driver.findElement(tasks_passed).getText());
+            int varTasks_failed_Begin = Integer.parseInt(driver.findElement(tasks_failed).getText());
+            int varTasks_remain_Begin = Integer.parseInt(driver.findElement(tasks_remain).getText());
+            String str1 = driver.findElement(num1).getText();
+            String str2 = driver.findElement(num2).getText();
+            String str4 = driver.findElement(By.id("mo_operation")).getText();
+            int actualResult = 0;
+            if (str4.equals("+")) {
+                actualResult = Integer.parseInt(str1.trim()) + Integer.parseInt(str2.trim());
+            } else {
+                if (str4.equals("-")) {
+                    actualResult = Integer.parseInt(str1.trim()) - Integer.parseInt(str2.trim());
+                } else {
+                    System.out.println("Incorrect operator");
+                }
+            }
+            String strActualResult = new Integer(actualResult).toString();
+            //System.out.println(str1 + " " + str4 + " " + str2 + " = " + strActualResult);
+            StringBuilder testStringBuilder = new StringBuilder();
+            Formatter testFormatter = new Formatter(testStringBuilder);
+            for (int i = 0; i < strActualResult.length(); i++) {
+                String subStr = strActualResult.substring(i, i + 1);
+                testFormatter.format("key_%s", subStr);
+                driver.findElement(By.id(testStringBuilder.toString())).click();
+                testStringBuilder.setLength(0);
+            }
+            int varTasks_passed_End = Integer.parseInt(driver.findElement(tasks_passed).getText());
+            int varTasks_failed_End = Integer.parseInt(driver.findElement(tasks_failed).getText());
+            int varTasks_remain_End = Integer.parseInt(driver.findElement(tasks_remain).getText());
+            assert varTasks_remain_End == varTasks_remain_Begin - 1 : "positiveTestCorrectAnswers: tasks remain";//
+            assert varTasks_failed_Begin == varTasks_failed_End : "positiveTestCorrectAnswers: tasks failed";
+            assert varTasks_passed_End == varTasks_passed_Begin + 1 : "positiveTestCorrectAnswers: tasks passed";
+        }
+        int varTasks_passed_AfterCycle  = Integer.parseInt(driver.findElement(tasks_passed).getText());
+        int varTasks_failed_AfterCycle = Integer.parseInt(driver.findElement(tasks_failed).getText());
+        int varTasks_remain_AfterCycle = Integer.parseInt(driver.findElement(tasks_remain).getText());
+        assert (varTasks_passed_AfterCycle + varTasks_failed_AfterCycle + varTasks_remain_AfterCycle) == qtyTasks : "positiveTestCorrectAnswers: tasks summ" ;//
+    }
+
     public void timeOutTest(int getQtyOfIterationsForWrongAnswers) {
 
         (new WebDriverWait(driver, 80)).until(ExpectedConditions.visibilityOfElementLocated(tasks_remain));
@@ -132,14 +186,55 @@ public class Game1 extends GameObject {
             int varTasks_failed_End = Integer.parseInt(driver.findElement(tasks_failed).getText());
             int varTasks_remain_End = Integer.parseInt(driver.findElement(tasks_remain).getText());
             int qtyTasksInLoop_End = Integer.parseInt(driver.findElement(tasks_all).getText());
-            assert varTasks_remain_Begin == varTasks_remain_End  : "negativeTestTimeOut: ";//
-            assert varTasks_failed_End == (varTasks_failed_Begin + 1) : "negativeTestTimeOut: ";
-            assert varTasks_passed_End == varTasks_passed_Begin : "negativeTestTimeOut: ";
-            assert qtyTasksInLoop_End == qtyTasksInLoop_Begin + 1 : "negativeTestTimeOut: ";
+            assert varTasks_remain_Begin == varTasks_remain_End  : "negativeTestTimeOut: tasks remain";//
+            assert varTasks_failed_End == (varTasks_failed_Begin + 1) : "negativeTestTimeOut: tasks failed";
+            assert varTasks_passed_End == varTasks_passed_Begin : "negativeTestTimeOut: tasks passed";
+            assert qtyTasksInLoop_End == qtyTasksInLoop_Begin + 1 : "negativeTestTimeOut: tasks all";
         }
         int varTasks_failed_After_Cycle = Integer.parseInt(driver.findElement(tasks_failed).getText());
         int qtyTasks_After_Cycle = Integer.parseInt(driver.findElement(tasks_all).getText());
-        assert varTasks_failed_After_Cycle - varTasks_failed_Before_Cycle == qtyTasks_After_Cycle - qtyTasks_Before_Cycle : "negativeTestTimeOut: ";//
+        assert varTasks_failed_After_Cycle - varTasks_failed_Before_Cycle == qtyTasks_After_Cycle - qtyTasks_Before_Cycle : "negativeTestTimeOut: incorrect relation";//
+        //System.out.println("Time out test passed");
+    }
+    public void timeOutTest() {
+
+        (new WebDriverWait(driver, 80)).until(ExpectedConditions.visibilityOfElementLocated(tasks_remain));
+        int qtyTasks_Before_Cycle = Integer.parseInt(driver.findElement(tasks_all).getText());int varTasks_passed_Before_Cycle  = Integer.parseInt(driver.findElement(tasks_passed).getText());
+        int varTasks_failed_Before_Cycle = Integer.parseInt(driver.findElement(tasks_failed).getText());
+        int varTasksRemain = Integer.parseInt(driver.findElement(tasks_remain).getText());
+        for(int iter = 0; iter < varTasksRemain; iter++) {
+            (new WebDriverWait(driver, 80)).until(ExpectedConditions.visibilityOfElementLocated(num1));
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            int varTasks_passed_Begin = Integer.parseInt(driver.findElement(tasks_passed).getText());
+            int varTasks_failed_Begin = Integer.parseInt(driver.findElement(tasks_failed).getText());
+            int varTasks_remain_Begin = Integer.parseInt(driver.findElement(tasks_remain).getText());
+            int qtyTasksInLoop_Begin = Integer.parseInt(driver.findElement(tasks_all).getText());
+            StringBuilder testStringBuilder = new StringBuilder();
+            Formatter testFormatter = new Formatter(testStringBuilder);
+            (new WebDriverWait(driver, 80)).until(ExpectedConditions.visibilityOfElementLocated(clock_for_time_out));
+            String CorrectAnswer = driver.findElement(result).getText();
+            for (int b = 0; b < CorrectAnswer.length(); b++) {
+                String subStr = CorrectAnswer.substring(b, b + 1);
+                testFormatter.format("key_%s", subStr);
+                driver.findElement(By.id(testStringBuilder.toString())).click();
+                testStringBuilder.setLength(0);
+            }
+            int varTasks_passed_End = Integer.parseInt(driver.findElement(tasks_passed).getText());
+            int varTasks_failed_End = Integer.parseInt(driver.findElement(tasks_failed).getText());
+            int varTasks_remain_End = Integer.parseInt(driver.findElement(tasks_remain).getText());
+            int qtyTasksInLoop_End = Integer.parseInt(driver.findElement(tasks_all).getText());
+            assert varTasks_remain_Begin == varTasks_remain_End  : "negativeTestTimeOut: tasks remain";//
+            assert varTasks_failed_End == (varTasks_failed_Begin + 1) : "negativeTestTimeOut: tasks failed";
+            assert varTasks_passed_End == varTasks_passed_Begin : "negativeTestTimeOut: tasks passed";
+            assert qtyTasksInLoop_End == qtyTasksInLoop_Begin + 1 : "negativeTestTimeOut: tasks all";
+        }
+        int varTasks_failed_After_Cycle = Integer.parseInt(driver.findElement(tasks_failed).getText());
+        int qtyTasks_After_Cycle = Integer.parseInt(driver.findElement(tasks_all).getText());
+        assert varTasks_failed_After_Cycle - varTasks_failed_Before_Cycle == qtyTasks_After_Cycle - qtyTasks_Before_Cycle : "negativeTestTimeOut: incorrect relation";//
         //System.out.println("Time out test passed");
     }
 
@@ -193,15 +288,75 @@ public class Game1 extends GameObject {
             int varTasks_failed_End = Integer.parseInt(driver.findElement(tasks_failed).getText());
             int varTasks_remain_End = Integer.parseInt(driver.findElement(tasks_remain).getText());
             int qtyTasksInLoop_End = Integer.parseInt(driver.findElement(tasks_all).getText());
-            assert varTasks_remain_Begin == varTasks_remain_End  : "negativeTestWrongAnswers: ";//
-            assert varTasks_failed_End == (varTasks_failed_Begin + 1) : "negativeTestWrongAnswers: ";
-            assert varTasks_passed_End == varTasks_passed_Begin : "negativeTestWrongAnswers: ";
-            assert qtyTasksInLoop_End == qtyTasksInLoop_Begin + 1 : "negativeTestWrongAnswers: ";
+            assert varTasks_remain_Begin == varTasks_remain_End  : "negativeTestWrongAnswers: tasks remain";//
+            assert varTasks_failed_End == (varTasks_failed_Begin + 1) : "negativeTestWrongAnswers: tasks failed";
+            assert varTasks_passed_End == varTasks_passed_Begin : "negativeTestWrongAnswers: tasks passed";
+            assert qtyTasksInLoop_End == qtyTasksInLoop_Begin + 1 : "negativeTestWrongAnswers: tasks all";
         }
         int varTasks_failed_After_Cycle = Integer.parseInt(driver.findElement(tasks_failed).getText());
         int qtyTasks_After_Cycle = Integer.parseInt(driver.findElement(tasks_all).getText());
-        assert varTasks_failed_After_Cycle - varTasks_failed_Before_Cycle == qtyTasks_After_Cycle - qtyTasks_Before_Cycle : "negativeTestWrongAnswers: ";//
+        assert varTasks_failed_After_Cycle - varTasks_failed_Before_Cycle == qtyTasks_After_Cycle - qtyTasks_Before_Cycle : "negativeTestWrongAnswers: incorrect relation";//
         //System.out.println("Wrong Answers test passed");
+    }
+
+    public void incorrectAnswersTest(){
+        (new WebDriverWait(driver, 80)).until(ExpectedConditions.visibilityOfElementLocated(tasks_remain));
+        int qtyTasks_Before_Cycle = Integer.parseInt(driver.findElement(tasks_all).getText());
+        int varTasks_failed_Before_Cycle = Integer.parseInt(driver.findElement(tasks_failed).getText());
+        int varTasksRemain = Integer.parseInt(driver.findElement(tasks_remain).getText());
+        for(int iter = 0; iter < varTasksRemain; iter++) {
+            (new WebDriverWait(driver, 80)).until(ExpectedConditions.visibilityOfElementLocated(num1));
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            int varTasks_passed_Begin = Integer.parseInt(driver.findElement(tasks_passed).getText());
+            int varTasks_failed_Begin = Integer.parseInt(driver.findElement(tasks_failed).getText());
+            int varTasks_remain_Begin = Integer.parseInt(driver.findElement(tasks_remain).getText());
+            int qtyTasksInLoop_Begin = Integer.parseInt(driver.findElement(tasks_all).getText());
+            String str1 = driver.findElement(num1).getText();
+            String str2 = driver.findElement(num2).getText();
+            String str4 = driver.findElement(By.id("mo_operation")).getText();
+            int actualResult = 0;
+            if (str4.equals("+")) {
+                actualResult = Integer.parseInt(str1.trim()) + Integer.parseInt(str2.trim());
+            } else {
+                if (str4.equals("-")) {
+                    actualResult = Integer.parseInt(str1.trim()) - Integer.parseInt(str2.trim());
+                } else {
+                    System.out.println("Incorrect operator");
+                }
+            }
+            String strActualResult = new Integer(actualResult + 1).toString();
+            // System.out.println(str1 + " " + str4 + " " + str2 + " = " + strActualResult);
+            StringBuilder testStringBuilder = new StringBuilder();
+            Formatter testFormatter = new Formatter(testStringBuilder);
+            for (int i = 0; i < strActualResult.length(); i++) {
+                String subStr = strActualResult.substring(i, i + 1);
+                testFormatter.format("key_%s", subStr);
+                driver.findElement(By.id(testStringBuilder.toString())).click();
+                testStringBuilder.setLength(0);
+            }
+            String CorrectAnswer = driver.findElement(result).getText();
+            for (int b = 0; b < CorrectAnswer.length(); b++) {
+                String subStr = CorrectAnswer.substring(b, b + 1);
+                testFormatter.format("key_%s", subStr);
+                driver.findElement(By.id(testStringBuilder.toString())).click();
+                testStringBuilder.setLength(0);
+            }
+            int varTasks_passed_End = Integer.parseInt(driver.findElement(tasks_passed).getText());
+            int varTasks_failed_End = Integer.parseInt(driver.findElement(tasks_failed).getText());
+            int varTasks_remain_End = Integer.parseInt(driver.findElement(tasks_remain).getText());
+            int qtyTasksInLoop_End = Integer.parseInt(driver.findElement(tasks_all).getText());
+            assert varTasks_remain_Begin == varTasks_remain_End  : "negativeTestWrongAnswers: tasks remain";//
+            assert varTasks_failed_End == (varTasks_failed_Begin + 1) : "negativeTestWrongAnswers: tasks failed";
+            assert varTasks_passed_End == varTasks_passed_Begin : "negativeTestWrongAnswers: tasks passed";
+            assert qtyTasksInLoop_End == qtyTasksInLoop_Begin + 1 : "negativeTestWrongAnswers: tasks all";
+        }
+        int varTasks_failed_After_Cycle = Integer.parseInt(driver.findElement(tasks_failed).getText());
+        int qtyTasks_After_Cycle = Integer.parseInt(driver.findElement(tasks_all).getText());
+        assert varTasks_failed_After_Cycle - varTasks_failed_Before_Cycle == qtyTasks_After_Cycle - qtyTasks_Before_Cycle : "negativeTestWrongAnswers: incorrect relation";
     }
 
     public void checkButtonShowHideTime() throws InterruptedException {
